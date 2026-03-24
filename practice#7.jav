@@ -52,4 +52,14 @@ public class RandomTester
         int index = randGenerator.nextInt(responses.size());
         return responses.get(index);
     }
+
+    public int randomFrom1ToMax(int max)
+    {
+    return randGenerator.nextInt(max) + 1;
+    }
+
+    public int randomFromMinToMax(int min, int max)
+    {
+    return randGenerator.nextInt(max - min + 1) + min;
+    }
 }
